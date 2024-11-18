@@ -257,7 +257,7 @@ img.logo {
 .product-name {
   font-size: 1.1rem;
   font-weight: bold;
-  color: #1e3932;
+  color: #6d4c41;
   margin: 10px 0;
 }
 .product-description {
@@ -269,7 +269,7 @@ img.logo {
 .product-price {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #000000;
+  color: #6d4c41;
   margin-bottom: 10px;
 }
 
@@ -277,7 +277,7 @@ img.logo {
 .add-to-cart {
   width: 100%;
   padding: 10px;
-  background-color: #00754a;
+  background-color: #6d4c41;
   color: white;
   border: none;
   border-radius: 5px;
