@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Meu Site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="Imagens bolos/logo.png" alt="Logotipo do site">
+            </div>
+
+            <div class="login">
+    <form action="jsp/validar.jsp" method="post">
+        <div class="form-group">
+            <label for="user">Usuário:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+            <input class="btn2" type="submit" value="Entrar">
+        </div>
+    </form>
+    <p class="cad">
+        Não está cadastrado?
+        <a href="cadastrese.html">Cadastre-se</a>
+    </p>
+        </div>
+        </div>
+
+        <div class="texto">
+            <h1>Conheça nossas opções.</h1>
+        </div>
+    </header>
+
+    <nav>
+        <a href="produtos.html">Produtos</a>
+        <a href="bolos.html">Bolos</a>
+        <a href="salgados.html">Salgados</a>
+        <a href="kit-festa.html">Kit Festa</a>
+        <a href="doces.html">Doces</a>
+        <a href="tortas-doces.html">Tortas Doces</a>
+        <a href="bebidas.html">Bebidas</a>
+        <a href="balas-de-coco.html">Balas de Coco</a>
+    </nav>
+
+    <main>
+        <h1>Os melhores preços e opções de bolos você encontra aqui.</h1>
+        <p>
+            <button onclick="location.href = 'https://sodiedoces.com.br/'">Saiba mais...</button>
+        </p>
+
+        <div class="carousel">
+            <div class="carousel-images" id="carouselImages">
+                <img src="Imagens bolos/banner1.png" alt="Imagem 1">
+                <img src="Imagens bolos/banner2.png" alt="Imagem 2">
+                <img src="Imagens bolos/banner3.jpg" alt="Imagem 3">
+            </div>
+            <div class="carousel-buttons">
+                <button class="button" onclick="prevImage()">❮</button>
+                <button class="button" onclick="nextImage()">❯</button>
+            </div>
+        </div>
+        
+        <div class="separator"></div>
+
+    </main>
+    <footer>
+        <!-- Adicione informações de rodapé aqui, se necessário -->
+    </footer>
+
+    <script>
+        let currentIndex = 0;
+
+        function showImage(index) {
+            const images = document.getElementById('carouselImages');
+            const totalImages = images.children.length;
+            if (index >= totalImages) {
+                currentIndex = 0;
+            } else if (index < 0) {
+                currentIndex = totalImages - 1;
+            } else {
+                currentIndex = index;
+            }
+            images.style.transform = `translateX(${-currentIndex * 760}px)`;
+        }
+
+        function nextImage() {
+            showImage(currentIndex + 1);
+        }
+
+        function prevImage() {
+            showImage(currentIndex - 1);
+        }
+    </script>
+    
+    <section class="options">
+    <div class="option">
+        <img src="Imagens bolos/bolos.png" alt="Bolos">
+        <h2>Bolos</h2>
+        <button onclick="location.href='bolos.html'">Saiba Mais</button>
+    </div>
+    <div class="option">
+        <img src="Imagens bolos/salgados.png" alt="Salgados">
+        <h2>Salgados</h2>
+        <button onclick="location.href='salgados.html'">Saiba Mais</button>
+    </div>
+    <div class="option">
+        <img src="Imagens bolos/kit-festa.png" alt="Kit Festa">
+        <h2>Kit Festa</h2>
+        <button onclick="location.href='kit-festa.html'">Saiba Mais</button>
+    </div>
+    <div class="option">
+        <img src="Imagens bolos/doces.png" alt="Doces">
+        <h2>Doces</h2>
+        <button onclick="location.href='doces.html'">Saiba Mais</button>
+    </div>
+</section>
+
+</body>
+</html>

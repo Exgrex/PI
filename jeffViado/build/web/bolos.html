@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Bolos - Meu Site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bolos.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="Imagens bolos/logo.png" alt="Logotipo do site">
+            </div>
+            <div class="login">
+                <form action="validar.jsp" method="post">
+                    <div class="form-group">
+                        <label for="usuario">Usuário:</label>
+                        <input type="text" id="usuario" name="usuario" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha" required>
+                    </div>
+                    <div class="form-group">
+                        <input class="botao" type="submit" value="Entrar">
+                    </div>
+                </form>
+                <p class="cad">
+                    Não está cadastrado?
+                    <a href="cadastrese.html">Cadastre-se</a>
+                </p>
+            </div>
+        </div>
+        <div class="texto">
+            <h1>Descubra nossos Bolos Exclusivos</h1>
+            <p>Os melhores sabores para todas as ocasiões.</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="produtos.html">Produtos</a>
+        <a href="bolos.html" class="active">Bolos</a>
+        <a href="salgados.html">Salgados</a>
+        <a href="kit-festa.html">Kit Festa</a>
+        <a href="doces.html">Doces</a>
+        <a href="tortas-doces.html">Tortas Doces</a>
+        <a href="bebidas.html">Bebidas</a>
+        <a href="balas-de-coco.html">Balas de Coco</a>
+    </nav>
+
+    <main>
+        <section class="banner">
+            <img src="Imagens bolos/banner2.png" alt="Banner Bolos">
+            <div class="banner-text">
+                <h2>Experimente Nossos Sabores Inesquecíveis</h2>
+                <p>Feitos com ingredientes frescos e de alta qualidade.</p>
+            </div>
+        </section>
+
+        <section class="product-list">
+            <div class="product-item">
+                <img src="Imagens bolos/Pistache com ganhache de limão.png" alt="Bolo de Chocolate">
+                <h2>Pistache com Ganache de Limão</h2>
+                <p>Um clássico irresistível para os amantes de chocolate. Recheado com camadas de ganache e cobertura cremosa.</p>
+                <button onclick="location.href='encomendar.html'">Encomendar</button>
+            </div>
+            
+            <div class="product-item">
+                <img src="Imagens bolos/Pistache com morango e leite condensado.png" alt="Bolo de Morango">
+                <h2>Pistache com Morango e Leite Condensado</h2>
+                <p>Camadas suaves com creme de morango fresco, decorado com frutas da estação.</p>
+                <button onclick="location.href='encomendar.html'">Encomendar</button>
+            </div>
+            
+            <div class="product-item">
+                <img src="Imagens bolos/bombom branco trufado.png" alt="Bolo de Coco">
+                <h2>Bombom Branco Trufado</h2>
+                <p>Com pedaços de coco fresco, este bolo traz um sabor tropical e textura incrível.</p>
+                <button onclick="location.href='encomendar.html'">Encomendar</button>
+            </div>
+            
+            <div class="product-item">
+                <img src="Imagens bolos/delícia de chocolate.png" alt="Bolo Napolitano">
+                <h2>Delícia De Chocolate</h2>
+                <p>A combinação perfeita de chocolate, morango e baunilha em um só bolo.</p>
+                <button onclick="location.href='encomendar.html'">Encomendar</button>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
